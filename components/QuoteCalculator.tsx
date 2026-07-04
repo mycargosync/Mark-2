@@ -291,7 +291,7 @@ export default function QuoteCalculator() {
                     </span>
                   </div>
                   <p style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: "#94A3B8" }} className="mt-1.5">
-                    Fleet size - for our records, doesn't affect pricing.
+                    Fleet size
                   </p>
                 </div>
 
@@ -325,9 +325,9 @@ export default function QuoteCalculator() {
                       {dispatchers === 1 ? "dispatcher" : "dispatchers"} required
                     </span>
                   </div>
-                  <p style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: "#94A3B8" }} className="mt-1.5">
+                  {/* <p style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: "#94A3B8" }} className="mt-1.5">
                     This is what drives your pricing below.
-                  </p>
+                  </p> */}
                 </div>
               </div>
             </div>

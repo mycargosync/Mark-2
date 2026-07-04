@@ -166,7 +166,7 @@ export default function About() {
                   marginBottom: "14px",
                 }}
               >
-                We currently have a core team of four experienced dispatchers, supported by administrative staff who assist with documentation, tracking, customer communication, and operational tasks. This structure allows us to provide consistent coverage and respond quickly to time-sensitive situations.
+                We currently have a core team of  experienced dispatchers, supported by administrative staff who assist with documentation, tracking, customer communication, and operational tasks. This structure allows us to provide consistent coverage and respond quickly to time-sensitive situations.
               </p>
               <p
                 style={{
