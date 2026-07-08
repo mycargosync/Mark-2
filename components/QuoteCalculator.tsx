@@ -200,7 +200,16 @@ export default function QuoteCalculator() {
                 1. Choose Services
               </h3>
               <div className="grid sm:grid-cols-2 gap-3 sm:gap-4">
-                {services.map((s) => {
+                {services
+                  .filter(
+                    (s) =>
+                      ![
+                        "driver-customer-communication",
+                        "fleet-tracking-monitoring",
+                        "scalable-dispatch-teams",
+                      ].includes(s.slug)
+                  )
+                  .map((s) => {
                   const pricing = pricingServices.find((p) => p.slug === s.slug);
                   const checked = selectedSlugs.includes(s.slug);
                   return (
@@ -245,6 +254,36 @@ export default function QuoteCalculator() {
                       <p style={{ fontFamily: "Inter, sans-serif", fontSize: "12px", color: "#6B7A99" }}>
                         from {pricing ? formatUSD(pricing.basePerDispatcherMonthly) : ""}/dispatcher/mo
                       </p>
+                      
+                      {s.slug === "freight-dispatch" && (
+                      <div
+                        style={{
+                          marginTop: "10px",
+                          padding: "10px",
+                          background: "#EEF7FF",
+                          border: "1px solid #1E6FFF",
+                          borderRadius: "10px",
+                        }}
+                        >
+                        <div
+                          style={{
+                            fontSize: "11px",
+                            fontWeight: 700,
+                            color: "#1E6FFF",
+                            textTransform: "uppercase",
+                            marginBottom: "6px",
+                          }}
+                          >
+                          ✔ Premium Package Includes
+                        </div>
+                        <div style={{ fontSize: "12px", color: "#0A1628", lineHeight: "1.8" }}>
+                          ✓ Driver & Customer Communication<br />
+                          ✓ Fleet Tracking & Monitoring<br />
+                          ✓ Scalable Dispatch Teams
+                        </div>
+                      </div>
+                    )}
+                    
                     </button>
                   );
                 })}
