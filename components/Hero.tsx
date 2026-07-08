@@ -205,7 +205,6 @@ export default function Hero() {
             style={{ borderTop: "1px solid rgba(255,255,255,0.1)" }}
           >
             {[
-              { n: "4+", l: "Expert Dispatchers" },
               { n: "2022", l: "Founded" },
               { n: "24/7", l: "Operational Support" },
               { n: "100%", l: "Dedicated to Your Fleet" },
@@ -213,7 +212,7 @@ export default function Hero() {
               <div key={s.l} className="flex items-center gap-2 sm:gap-3">
                 <span
                   style={{
-                    fontFamily: "Syne, sans-serif",
+                    fontFamily: "Poppins, sans-serif",
                     fontWeight: 800,
                     fontSize: "clamp(18px, 4vw, 24px)",
                     color: "#1E6FFF",
