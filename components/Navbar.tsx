@@ -37,7 +37,7 @@ export default function Navbar() {
             className="rounded-xl flex-shrink-0"
           />
           <span
-            style={{ fontFamily: "Syne, sans-serif", fontWeight: 800, fontSize: "clamp(16px, 4vw, 20px)", color: scrolled ? "#0A1628" : "white" }}
+            style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(16px, 4vw, 20px)", color: scrolled ? "#0A1628" : "white" }}
           >
             Cargo<span style={{ color: "#1E6FFF" }}>Sync</span>
           </span>
