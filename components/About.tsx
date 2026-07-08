@@ -84,7 +84,7 @@ export default function About() {
 
                 {/* Stats row */}
                 <div
-                  className="relative z-10 grid grid-cols-3 gap-2 sm:gap-4 pt-6 sm:pt-8"
+                  className="relative z-10 grid grid-cols-2 gap-2 sm:gap-4 pt-6 sm:pt-8"
                   style={{ borderTop: "1px solid rgba(255,255,255,0.1)", marginTop: "24px" }}
                 >
                   {[
@@ -92,7 +92,7 @@ export default function About() {
                     { n: "24/7", l: "Coverage" },
                   ].map((s) => (
                     <div key={s.l} className="text-center">
-                      <div style={{ fontFamily: "Syne, sans-serif", fontWeight: 800, fontSize: "clamp(20px, 4vw, 28px)", color: "#1E6FFF" }}>
+                      <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(20px, 4vw, 28px)", color: "#1E6FFF" }}>
                         {s.n}
                       </div>
                       <div style={{ color: "rgba(255,255,255,0.5)", fontSize: "11px", fontFamily: "Inter, sans-serif", marginTop: "4px" }}>
@@ -105,7 +105,7 @@ export default function About() {
 
               {/* Floating badge */}
               <div
-                className="absolute -bottom-4 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3"
+                className="absolute -bottom-8 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3"
                 style={{ border: "1px solid #C8D8FF", maxWidth: "calc(100% - 16px)" }}
               >
                 <div
