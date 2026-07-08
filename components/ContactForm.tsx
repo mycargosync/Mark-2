@@ -154,8 +154,8 @@ export default function ContactForm() {
                     </svg>
                   ),
                   label: "Email",
-                  value: "hello@cargosync.ca",
-                  href: "mailto:hello@cargosync.ca",
+                  value: "info@mycargosync.com",
+                  href: "mailto:info@mycargosync.com",
                 },
                 {
                   icon: (
