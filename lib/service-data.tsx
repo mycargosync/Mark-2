@@ -8,6 +8,7 @@ export interface Service {
   icon: ReactNode;
   longDesc: string[];
   features: string[];
+  includedServices?: string[];
 }
 
 export const services: Service[] = [
@@ -33,6 +34,11 @@ export const services: Service[] = [
       "Detention and accessorial tracking",
       "Lane and equipment-matched booking",
     ],
+    includedServices: [
+      "Driver & Customer Communication",
+      "Fleet Tracking & Monitoring",
+      "Scalable Dispatch Teams",
+      ]
   },
   {
     slug: "back-office-administration",
