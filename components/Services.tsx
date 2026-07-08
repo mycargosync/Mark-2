@@ -81,6 +81,47 @@ export default function Services() {
               >
                 {s.shortDesc}
               </p>
+              {s.slug === "freight-dispatch" && (
+              <div
+                style={{
+                  margin: "18px 0",
+                  padding: "16px",
+                  background: "linear-gradient(135deg,#0A1628,#1E6FFF)",
+                  borderRadius: "14px",
+                  color: "#fff",
+                  boxShadow: "0 12px 30px rgba(30,111,255,.25)",
+                }}
+                >
+                <div
+                  style={{
+                    fontSize: "11px",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    opacity: 0.8,
+                    marginBottom: "8px",
+                  }}
+                  >
+                  Included at no extra cost
+                </div>
+                
+                <div
+                  style={{
+                    fontSize: "16px",
+                    fontWeight: 700,
+                    marginBottom: "12px",
+                  }}
+                  >
+                  Freight Dispatch Includes
+                </div>
+                
+                <div style={{ fontSize: "14px", lineHeight: "2" }}>
+                  ✓ Driver & Customer Communication<br />
+                  ✓ Fleet Tracking & Monitoring<br />
+                  ✓ Scalable Dispatch Teams
+                </div>
+              </div>
+                )}
+              
               <div className="flex flex-wrap gap-2 mb-4">
                 {s.tags.map((t) => (
                   <span
