@@ -105,7 +105,7 @@ export default function About() {
 
               {/* Floating badge */}
               <div
-                className="absolute -bottom-8 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3"
+                className="absolute -bottom-10 right-2 sm:-right-4 bg-white rounded-2xl shadow-xl p-3 sm:p-4 flex items-center gap-2 sm:gap-3"
                 style={{ border: "1px solid #C8D8FF", maxWidth: "calc(100% - 16px)" }}
               >
                 <div
