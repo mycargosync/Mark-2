@@ -88,7 +88,6 @@ export default function About() {
                   style={{ borderTop: "1px solid rgba(255,255,255,0.1)", marginTop: "24px" }}
                 >
                   {[
-                    { n: "4+", l: "Core Dispatchers" },
                     { n: "2022", l: "Founded" },
                     { n: "24/7", l: "Coverage" },
                   ].map((s) => (
