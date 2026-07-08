@@ -5,12 +5,9 @@ export interface PricingService {
 
 // Edit these rates anytime - everything else recalculates automatically
 export const pricingServices: PricingService[] = [
-  { slug: "freight-dispatch", basePerDispatcherMonthly: 549 },
+  { slug: "freight-dispatch", basePerDispatcherMonthly: 999 },
   { slug: "back-office-administration", basePerDispatcherMonthly: 199 },
-  { slug: "cross-border-coordination", basePerDispatcherMonthly: 149 },
-  { slug: "driver-customer-communication", basePerDispatcherMonthly: 99 },
-  { slug: "fleet-tracking-monitoring", basePerDispatcherMonthly: 129 },
-  { slug: "scalable-dispatch-teams", basePerDispatcherMonthly: 179 },
+  { slug: "cross-border-coordination", basePerDispatcherMonthly: 249 },
 ];
 
 // Only discount left in the system - based purely on commitment length
