@@ -466,7 +466,7 @@ export default function QuoteCalculator() {
               style={{ border: "1.5px solid #C8D8FF", boxShadow: "0 20px 60px rgba(30, 111, 255, 0.08)" }}
             >
               <h3
-                style={{ fontFamily: "Syne, sans-serif", fontWeight: 800, fontSize: "18px", color: "#0A1628" }}
+                style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "18px", color: "#0A1628" }}
                 className="mb-5"
               >
                 Your Estimate
