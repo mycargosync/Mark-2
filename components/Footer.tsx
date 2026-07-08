@@ -168,7 +168,7 @@ export default function Footer() {
 </li>
               <li>
                 <a
-                  href="mailto:hello@octopustech.in"
+                  href="mailto:info@mycargosync.com"
                   style={{
                     color: "rgba(255,255,255,0.5)",
                     fontSize: "13px",
@@ -176,7 +176,7 @@ export default function Footer() {
                     textDecoration: "none",
                   }}
                 >
-                  hello@cargosync.ca
+                  info@mycargosync.com
                 </a>
               </li>
               <li
