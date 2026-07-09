@@ -81,6 +81,19 @@ export default function Services() {
               >
                 {s.shortDesc}
               </p>
+              {s.includedServices && (
+              <div
+                style={{
+                  color: "#F59E0B",
+                  fontSize: "13px",
+                  fontWeight: 600,
+                  marginBottom: "12px",
+                }}
+                >
+                Included with Freight Dispatch
+              </div>
+            )}
+              
               {s.slug === "freight-dispatch" && (
               <div
                 style={{
