@@ -163,7 +163,7 @@ export default function QuoteCalculator() {
         }
       `}</style>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-60 lg:pb-0">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-28 lg:pb-0">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14">
           <span
