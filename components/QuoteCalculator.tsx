@@ -30,6 +30,22 @@ export default function QuoteCalculator() {
       summaryRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   }, [state]);
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!quoteRef.current) return;
+      
+      const quoteTop = quoteRef.current.getBoundingClientRect().top;
+      
+      // Show sticky after reaching the quote section
+      setShowSticky(quoteTop < 100);
+    };
+    
+    window.addEventListener("scroll", handleScroll);
+    
+    handleScroll();
+    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleService = (slug: string) => {
     setSelectedSlugs((prev) => (prev.includes(slug) ? prev.filter((s) => s !== slug) : [...prev, slug]));
@@ -135,7 +151,7 @@ export default function QuoteCalculator() {
   }
 
   return (
-    <section id="quote" className="py-16 sm:py-24" style={{ background: "#F8FAFC" }}>
+    <section id="quote" ref={quoteRef} className="py-16 sm:py-24" style={{ background: "#F8FAFC" }}>
       <style>{`
         .qc-no-spinner::-webkit-outer-spin-button,
         .qc-no-spinner::-webkit-inner-spin-button {
@@ -564,6 +580,7 @@ export default function QuoteCalculator() {
       </div>
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
+          {showSticky && (
       <div
         className="lg:hidden fixed inset-x-0 bottom-6 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
@@ -597,6 +614,7 @@ export default function QuoteCalculator() {
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
           </p>
         </div>
+        )}
         <button
           type="submit"
           form="quote-form"
