@@ -204,18 +204,9 @@ export default function PrivacyPolicyPage() {
             <p className="font-semibold mb-1" style={{ color: "#0A1628" }}>
               CargoSync
             </p>
-            <p>Email: hello@cargosync.ca</p>
+            <p>Email: info@mycargosync.com</p>
             <p>Canada: +1 (204) 952-9246</p>
             <p>India: +91 7428975521</p>
-            <p className="mt-3">
-              Address:
-              <br />
-              1307-235 Red Embers Way NE,
-              <br />
-              Calgary, Alberta T3N 1E9,
-              <br />
-              Canada
-            </p>
           </Section>
         </div>
       </div>
