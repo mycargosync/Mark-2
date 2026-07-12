@@ -580,9 +580,8 @@ export default function QuoteCalculator() {
       </div>
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
-      {showSticky && !footerVisible && (
       <div
-        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
+        className="lg:hidden fixed inset-x-0 bottom-4 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
           background: "white",
           borderTop: "1px solid #EEF2F8",
@@ -590,7 +589,6 @@ export default function QuoteCalculator() {
           paddingTop: "8px",
           paddingBottom: "calc(8px + env(safe-area-inset-bottom, 0px))",
         }}
-        )}
       >
         <div className="min-w-0">
           <p
