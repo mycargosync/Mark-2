@@ -562,7 +562,7 @@ export default function QuoteCalculator() {
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
       <div
-        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-4 px-4 sm:px-6"
+        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-3 px-4 py-3"
         style={{
           background: "white",
           borderTop: "1px solid #EEF2F8",
@@ -584,14 +584,13 @@ export default function QuoteCalculator() {
             {selectedSlugs.length === 0 ? "Estimate" : "Monthly Total"}
           </p>
           <p
-            className="truncate"
+            className="text-2xl leading-tight break-words"
             style={{
               fontFamily: "Syne, sans-serif",
               fontWeight: 800,
-              fontSize: "20px",
               color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF",
             }}
-          >
+            >
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
           </p>
         </div>
