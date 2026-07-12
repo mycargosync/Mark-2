@@ -144,7 +144,7 @@ export default function QuoteCalculator() {
         }
       `}</style>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-28 lg:pb-0">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-40 lg:pb-0">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14">
           <span
@@ -562,13 +562,13 @@ export default function QuoteCalculator() {
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
       <div
-        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-3 px-4 py-3"
+        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
           background: "white",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
-          paddingTop: "12px",
-          paddingBottom: "calc(12px + env(safe-area-inset-bottom, 0px))",
+          paddingTop: "8px",
+          paddingBottom: "calc(8px + env(safe-area-inset-bottom, 0px))",
         }}
       >
         <div className="min-w-0">
@@ -584,10 +584,10 @@ export default function QuoteCalculator() {
             {selectedSlugs.length === 0 ? "Estimate" : "Monthly Total"}
           </p>
           <p
-            className="text-2xl leading-tight break-words"
+            className="text-2xl md:text-3xl leading-tight"
             style={{
-              fontFamily: "Syne, sans-serif",
-              fontWeight: 800,
+              fontFamily: "Inter, sans-serif",
+              fontWeight: 700,
               color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF",
             }}
             >
