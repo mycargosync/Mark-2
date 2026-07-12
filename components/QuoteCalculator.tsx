@@ -581,9 +581,9 @@ export default function QuoteCalculator() {
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
       <div
-        className="lg:hidden fixed inset-x-0 bottom-4 z-40 flex flex-col gap-2 px-4 py-3"
+        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
-          background: "white",
+          background: "transparent",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
           paddingTop: "8px",
