@@ -583,11 +583,11 @@ export default function QuoteCalculator() {
       <div
         className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
-          background: "transparent",
+          background: "white",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
-          paddingTop: "8px",
-          paddingBottom: "calc(8px + env(safe-area-inset-bottom, 0px))",
+          paddingTop: "4px",
+          paddingBottom: "calc(4px + env(safe-area-inset-bottom, 0px))",
         }}
       >
         <div className="min-w-0">
