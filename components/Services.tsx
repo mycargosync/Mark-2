@@ -59,6 +59,29 @@ export default function Services() {
               >
                 {s.icon}
               </div>
+              {[
+              "driver-customer-communication",
+              "fleet-tracking-monitoring",
+              "scalable-dispatch-teams"
+            ].includes(s.slug) && (
+              <div
+                style={{
+                  display: "inline-block",
+                  marginTop: "10px",
+                  marginBottom: "10px",
+                  padding: "4px 10px",
+                  borderRadius: "999px",
+                  background: "#EEF5FF",
+                  color: "#1E6FFF",
+                  fontSize: "11px",
+                  fontWeight: 700,
+                  textTransform: "uppercase",
+                  letterSpacing: "0.05em",
+                }}
+                >
+                ✓ Included with Freight Dispatch
+              </div>
+            )}
               <h3
                 style={{
                   fontFamily: "Syne, sans-serif",
