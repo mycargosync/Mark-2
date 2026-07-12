@@ -19,6 +19,9 @@ export default function QuoteCalculator() {
   const [errorMsg, setErrorMsg] = useState("");
   const [savedQuoteId, setSavedQuoteId] = useState<string | null>(null);
   const summaryRef = useRef<HTMLDivElement>(null);
+  const quoteRef = useRef<HTMLDivElement>(null);
+  const [showSticky, setShowSticky] = useState(false);
+  const [footerVisible, setFooterVisible] = useState(false);
 
   const calc = useMemo(() => calculateQuote(selectedSlugs, dispatchers, term), [selectedSlugs, dispatchers, term]);
 
