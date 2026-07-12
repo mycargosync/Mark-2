@@ -163,7 +163,7 @@ export default function QuoteCalculator() {
         }
       `}</style>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-30 lg:pb-0">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-40 lg:pb-0">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14">
           <span
@@ -586,8 +586,8 @@ export default function QuoteCalculator() {
           background: "white",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
-          paddingTop: "4px",
-          paddingBottom: "calc(4px + env(safe-area-inset-bottom, 0px))",
+          paddingTop: "2px",
+          paddingBottom: "calc(2px + env(safe-area-inset-bottom, 0px))",
         }}
       >
         <div className="min-w-0">
