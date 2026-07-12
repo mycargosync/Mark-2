@@ -590,8 +590,8 @@ export default function QuoteCalculator() {
           paddingTop: "8px",
           paddingBottom: "calc(8px + env(safe-area-inset-bottom, 0px))",
         }}
-      >
         )}
+      >
         <div className="min-w-0">
           <p
             style={{
