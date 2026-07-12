@@ -163,7 +163,7 @@ export default function QuoteCalculator() {
         }
       `}</style>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-60 lg:pb-0">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-30 lg:pb-0">
         {/* Header */}
         <div className="text-center mb-10 sm:mb-14">
           <span
@@ -580,12 +580,8 @@ export default function QuoteCalculator() {
       </div>
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
-          {showSticky && !footerVisible && (
       <div
-        className="lg:hidden fixed inset-x-0 bottom-6 z-40 flex flex-col gap-2 px-4 py-3"
-        {/* All the text and numbers inside the bar go here */}
-    </div>
-    )}
+        className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
           background: "white",
           borderTop: "1px solid #EEF2F8",
