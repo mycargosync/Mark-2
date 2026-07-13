@@ -587,7 +587,11 @@ export default function QuoteCalculator() {
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
           paddingTop: "2px",
-          paddingBottom: "calc(2px + env(safe-area-inset-bottom, 0px))",
+          /* Change 1: Increased padding to handle mobile bars better */
+          paddingBottom: "calc(16px + env(safe-area-inset-bottom, 0px))",
+          /* Change 2: Limit the mx height and allow scrolling if text overflows */
+          maxheight: "35vh"
+          overflowY: "auto"
         }}
       >
         <div className="min-w-0">
