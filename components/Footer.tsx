@@ -9,7 +9,7 @@ export default function Footer() {
         background: "#0A1628",
         color: "white",
         paddingTop: "48px",
-        paddingBottom: "32px",
+        paddingBottom: "120px",
       }}
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
