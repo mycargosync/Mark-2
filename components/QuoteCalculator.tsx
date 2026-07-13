@@ -602,14 +602,14 @@ export default function QuoteCalculator() {
               letterSpacing: "0.04em",
             }}
           >
-            {selectedSlugs.length=== 0 ? "Estimate" : "Monthly Total"}
+            {selectedSlugs.length === 0 ? "Estimate" : "Monthly Total"}
           </p>
           <p
             className="text-2xl md:text-3xl leading-tight"
             style={{
               fontFamily: "Inter, sans-serif",
               fontWeight: 700,
-              color: selectedSlugs.length=== 0 ? "6B7A99" : "#1E6FFF",
+              color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF",
             }}
             >
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
