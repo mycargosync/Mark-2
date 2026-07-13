@@ -580,10 +580,10 @@ export default function QuoteCalculator() {
       </div>
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
+      {selectedSlugs.length > 0 && (
       <div
         className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
-          position: "relative",
           background: "white",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
@@ -603,19 +603,22 @@ export default function QuoteCalculator() {
               letterSpacing: "0.04em",
             }}
           >
-            {selectedSlugs.length === 0 ? "Estimate" : "Monthly Total"}
+            Monthly Total
           </p>
           <p
             className="text-2xl md:text-3xl leading-tight"
             style={{
               fontFamily: "Inter, sans-serif",
               fontWeight: 700,
-              color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF",
+              color: "#1E6FFF",
             }}
             >
+            {/* This outputs the active dynamic total */}
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
           </p>
         </div>
+        </div>
+        )}
         <button
           type="submit"
           form="quote-form"
