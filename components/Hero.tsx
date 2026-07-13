@@ -202,8 +202,7 @@ export default function Hero() {
           {/* Trust bar */}
           <div
             className="grid grid-cols-2 sm:flex sm:flex-wrap gap-4 sm:gap-6 mt-10 sm:mt-12 pt-8 sm:pt-10"
-            style={{ borderTop: "1px solid rgba(255,255,255,0.1)",
-                    marginBottom: "140px"
+            style={{ borderTop: "1px solid rgba(255,255,255,0.1)"                   
                    }}
           >
             {[
