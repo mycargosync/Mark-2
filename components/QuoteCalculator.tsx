@@ -603,20 +603,19 @@ export default function QuoteCalculator() {
               letterSpacing: "0.04em",
             }}
           >
-            Monthly Total
+            {selectedSlugs.length=== 0 ? "Estimate" : "Monthly Total"}
           </p>
           <p
             className="text-2xl md:text-3xl leading-tight"
             style={{
               fontFamily: "Inter, sans-serif",
               fontWeight: 700,
-              color: "#1E6FFF",
+              color: selectedSlugs.length=== 0 ? "6B7A99" : "#1E6FFF",
             }}
             >
-            {/* This outputs the active dynamic total */}
+            {/* Your price total calculations display here */}
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
           </p>
-        </div>
         </div>
         )}
         <button
