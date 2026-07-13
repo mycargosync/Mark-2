@@ -583,6 +583,7 @@ export default function QuoteCalculator() {
       <div
         className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
+          position: "relative",
           background: "white",
           borderTop: "1px solid #EEF2F8",
           boxShadow: "0 -8px 24px rgba(10, 22, 40, 0.08)",
