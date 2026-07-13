@@ -580,7 +580,6 @@ export default function QuoteCalculator() {
       </div>
 
       {/* Mobile sticky price bar - mirrors live total, submits the same form */}
-      {selectedSlugs.length > 0 && (
       <div
         className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
@@ -613,7 +612,6 @@ export default function QuoteCalculator() {
               color: selectedSlugs.length=== 0 ? "6B7A99" : "#1E6FFF",
             }}
             >
-            {/* Your price total calculations display here */}
             {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
           </p>
         </div>
