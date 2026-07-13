@@ -578,8 +578,8 @@ export default function QuoteCalculator() {
           </div>
         </form>
       </div>
-
-      {/* Mobile sticky price bar - mirrors live total, submits the same form */}
+      
+      {selectedSlugs.length > 0 && (
       <div
         className="lg:hidden fixed inset-x-0 bottom-0 z-40 flex flex-col gap-2 px-4 py-3"
         style={{
@@ -591,7 +591,7 @@ export default function QuoteCalculator() {
           maxHeight: "35vh",
           overflowY: "auto"
         }}
-      >
+        >
         <div className="min-w-0">
           <p
             style={{
@@ -599,9 +599,9 @@ export default function QuoteCalculator() {
               fontSize: "11px",
               color: "#6B7A99",
               textTransform: "uppercase",
-              letterSpacing: "0.04em",
+              letterSpacing: "0.04em"
             }}
-          >
+            >
             {selectedSlugs.length === 0 ? "Estimate" : "Monthly Total"}
           </p>
           <p
@@ -609,13 +609,21 @@ export default function QuoteCalculator() {
             style={{
               fontFamily: "Inter, sans-serif",
               fontWeight: 700,
-              color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF",
+              color: selectedSlugs.length === 0 ? "#6B7A99" : "#1E6FFF"
             }}
             >
-            {selectedSlugs.length === 0 ? "Select a service" : formatUSD(calc.monthlyTotal)}
+            {selectedSlugs.length === 0 ? "$0" : "Monthly Total"}
           </p>
         </div>
-        )}
+    <button
+      type="submit"
+      form="quote-form"
+      className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium"
+    >
+      Get My Quote
+    </button>
+  </div>
+)}
         <button
           type="submit"
           form="quote-form"
